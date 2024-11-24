@@ -1,0 +1,93 @@
+body {
+  margin: 0px;
+  background-color: #c19ac7;
+}
+
+.login {
+  width: -webkit-fill-available;
+  background-color: white;
+  height: 60vh;
+  display: flex;
+  padding: 0.5rem;
+  margin: 8rem;
+  border-radius: 5rem;
+}
+
+.login-img {
+  width: 50%;
+  height: -webkit-fill-available;
+}
+.login-img img {
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  border-radius: 20% 40% 50% 20%;
+  background-color: white;
+}
+
+.svgg {
+  margin-top: -2rem;
+}
+
+.login-info {
+  color: black;
+  font-size: 1rem;
+  background-color: white;
+  width: -webkit-fill-available;
+  text-align: center;
+  align-content: center;
+  border-radius: 5rem;
+}
+.login-info form label {
+  margin: 1rem;
+  position: absolute;
+}
+
+.login-info form input {
+  border: 2px solid black;
+  width: 50%;
+  display: inline;
+  border-radius: 2rem;
+  padding: 1em;
+}
+.login-info form input:active {
+  border: 2px solid #c19ac7;
+}
+
+.login-info form button {
+  background-color: #c19ac7;
+  color: black;
+  border: none;
+  border-radius: 2rem;
+  width: 8rem;
+  height: 2rem;
+  margin-top: 2rem;
+}
+.login-info form button:hover {
+  background-color: #5aa0d6;
+}
+
+.wave {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+@media screen and (max-width: 500px) {
+  .login {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: -webkit-fill-available;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    justify-content: center;
+  }
+  .login-img {
+    display: none;
+  }
+  .login-info form input{
+    width: -webkit-fill-available;
+  }
+}

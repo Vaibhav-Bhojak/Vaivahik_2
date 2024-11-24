@@ -1,0 +1,230 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.nav {
+  width: 4rem;
+  height: auto;
+  margin-top: 2em;
+  margin-left: 2em;
+  color: #c19ac7;
+}
+
+.section-one {
+  width: -webkit-fill-available;
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+.sec-text {
+  width: 50%;
+  height: -webkit-fill-available;
+  text-align: center;
+  align-content: center;
+}
+.sec-text span {
+  font-size: 4em;
+  font-weight: 900;
+}
+.sec-btn button {
+  width: 10em;
+  height: 2.5em;
+  margin-inline: 1em;
+  background-color: #c19ac7;
+  border: none;
+  margin-top: 2em;
+  transition: 1s;
+}
+.sec-btn button:hover {
+  background-color: #5aa0d6;
+}
+.sec-btn a {
+  font-weight: 900;
+  color: white;
+  text-decoration: none;
+}
+.sec-img {
+  width: 50%;
+  height: 100vh;
+  background-color: #5aa0d63e;
+  border-radius: 60% 20% 30% 40%;
+}
+.sec-img img {
+  width: -webkit-fill-available;
+  height: 100vh;
+}
+.sec-des {
+  margin-top: 5rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  text-align: justify;
+}
+.sec-des span {
+  font-size: 0.8em;
+  font-weight: 400;
+}
+.sp {
+  background-color: #c19ac7;
+  text-align: center;
+  font-size: 5em;
+  font-weight: 900;
+  color: white;
+}
+
+.review-one {
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 2rem;
+  margin-top: 2rem;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.review-three {
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 2rem;
+  margin-top: 2rem;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.one-img {
+  background-color: #5aa0d653;
+  width: 50%;
+  border-radius: 60% 20% 60% 20%;
+  margin-right: 5rem;
+  float: left;
+  box-shadow: inset #5aa0d6 0px 0px 10px 0px,
+    rgba(0, 0, 0, 0.3) 0px 30px 100px 24px;
+}
+.one-img img {
+  width: -webkit-fill-available;
+  height: 25rem;
+  /* border-radius: 50%; */
+  margin-right: 0rem;
+  border-radius: 60% 20% 60% 20%;
+  margin-bottom: 0rem;
+}
+
+.one-txt {
+  width: -webkit-fill-available;
+  margin-right: 5rem;
+  text-align: center;
+  align-content: center;
+}
+
+.review-two {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  background-color: #c19ac7;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+  margin-top: -1px;
+}
+.two-img img {
+  width: -webkit-fill-available;
+  height: 25rem;
+  /* border-radius: 50%; */
+  margin-right: 0rem;
+  border-radius: 20% 60% 20% 60%;
+  margin-bottom: 0rem;
+}
+.two-img {
+  background-color: #5aa0d653;
+  width: 50%;
+  border-radius: 20% 60% 20% 60%;
+  margin-right: 5rem;
+  float: left;
+  box-shadow: inset white 0px 0px 10px 0px,
+    rgba(0, 0, 0, 0.3) 0px 30px 100px 24px;
+}
+.footer {
+  background-color: #c19ac7;
+  color: white;
+  font-weight: 900;
+  height: 4rem;
+  text-align: center;
+  align-content: center;
+  margin-top: 2rem;
+  padding-bottom: 2em;
+}
+
+.svgg {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .sec-img{
+    display: none;
+  }
+  .sec-text{
+    width: auto;
+  }
+  .review-one{
+    display: flex;
+    flex-direction: column;
+  }
+  .one-img{
+    width: auto;
+    margin-right: 0rem;
+  }
+  .one-txt {
+    width: -webkit-fill-available;
+    margin-right: 0rem;
+    text-align: justify;
+    margin-top: 2rem;
+    margin: 2rem;
+  }
+  .review-three{
+    display: flex;
+    flex-direction: column;
+  }
+  .three-img{
+    width: auto;
+    margin-right: 0rem;
+  }
+  .three-txt {
+    width: -webkit-fill-available;
+    margin-right: 0rem;
+    text-align: justify;
+    margin-top: 2rem;
+  }
+  .review-two{
+    display: flex;
+    flex-direction: column;
+  }
+  .two-img{
+    width: auto;
+    margin-right: 0rem;
+  }
+  .two-txt {
+    width: -webkit-fill-available;
+    margin-right: 0rem;
+    text-align: justify;
+    margin-top: 2rem;
+  }
+  .two-img{
+    margin: 2rem;
+  }
+
+  .sp{
+    font-size: 2rem;
+  }
+  .footer{
+    padding: 3rem;
+  }
+}
